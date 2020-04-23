@@ -142,7 +142,7 @@ section{
     margin-left: 20rem ;
     width: 80%;
     height: 100% !important;
-    filter: opacity(0.55);
+    filter: opacity(0.6);
 }
 
 .bg-top-big img:hover{
@@ -162,7 +162,7 @@ section{
 .bg-top-big-top{
     position: absolute;
     float: left;
-    transform: translate(12rem,14rem);
+    transform: translate(10rem,14rem);
     z-index: 2;
 }
 .bg-top-big-top img{
@@ -222,6 +222,7 @@ section{
     margin: 1rem;
     overflow: hidden;
     /* height: 3rem; */
+    max-width: 23rem;
 }
 .list-images:hover{
     transform: scale(1.15);
