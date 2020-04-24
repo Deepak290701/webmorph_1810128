@@ -481,4 +481,7 @@ footer{
     #card2{
         max-width: 100%;
     }
+    .lan-image img{
+        max-height: 8rem;
+    }
 }
