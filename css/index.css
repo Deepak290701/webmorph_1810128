@@ -91,6 +91,8 @@ to{ bottom:0; opacity:1 }
 /* Scroll Indicator Ends*/ 
 
 
+
+
 body{
     background: #152535 !important;
     font-family: 'Josefin Sans','Poppins', sans-serif !important;
@@ -171,7 +173,7 @@ section{
     height: 35vh;
     width: 60%;
     margin-left:30%;
-    margin-top: 25%;
+    margin-top: 27.5%;
     z-index: 1000;
 }
 
@@ -424,11 +426,12 @@ footer{
     .top-text1{
         display: none;
     }
-    .top-text2{
+    .top-text2 {
         display: block;
         margin: 2rem;
+        color: #203345;
         margin-left: 2rem;
-        color: #737d86;
+        /* color: #737d86; */
     }
     .top-text2 button{
         margin: 0.6rem;    
@@ -470,14 +473,19 @@ footer{
 }
 
 @media screen and (max-width:686px){
+    section{
+        margin-left: -2rem !important;
+    }
         
     #card2{
         max-width: 75%;
     }
 }
 
-@media screen and (max-width:411px){
-        
+@media screen and (max-width:430px){
+    section{
+        margin-left: -1rem !important;
+    }
     #card2{
         max-width: 100%;
     }
