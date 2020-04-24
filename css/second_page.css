@@ -1,5 +1,5 @@
 html{
-    font-size: 70%;
+    font-size: 85%;
 }
 *{
     color: white;
@@ -28,11 +28,10 @@ body{
 }
 .bg.big{
     float: right;
-    /* margin-right: 5rem; */
     z-index: -1;
 }
 .bg.big img{
-    margin-right: 4rem !important;
+    margin-right: 10rem !important;
     height: 45vh;
     margin:auto auto ;
 }
