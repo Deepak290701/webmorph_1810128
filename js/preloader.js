@@ -1,4 +1,6 @@
 
+/* Pre-Loader*/
+ 
 var myVar;
 
 function myFunction1() {
@@ -10,6 +12,9 @@ function showPage() {
   document.getElementById("myDiv").style.display = "block";
 
 }
+
+
+/* Scroll Indicator*/ 
 
 window.onscroll = function() {myFunction()};
 

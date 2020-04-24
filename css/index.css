@@ -7,6 +7,9 @@ html{
     transition: all 0.5s ease-in-out;
     overflow-x: hidden;
 }
+
+/* preloader */
+
 #loader-text{
     display: flex;
     justify-content: center;
@@ -26,63 +29,66 @@ html{
         -webkit-transform: translateY(0); 
        }
  } 
- 
-  @keyframes up {
-    0% {
-        -webkit-transform: translateY(-100px); 
+
+@keyframes up {
+0% {
+    -webkit-transform: translateY(-100px); 
+}
+100% {
+    -webkit-transform: translateY(0); 
     }
-    100% {
-        -webkit-transform: translateY(0); 
-       }
-  }
+}
 
   
 #myDiv {
     display: none;
  }
-  
-  
-  .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 2s;
-    animation-name: animatebottom;
-    animation-duration: 2s
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-400px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-400px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
 
 
+.animate-bottom {
+position: relative;
+-webkit-animation-name: animatebottom;
+-webkit-animation-duration: 2s;
+animation-name: animatebottom;
+animation-duration: 2s
+}
+
+@-webkit-keyframes animatebottom {
+from { bottom:-400px; opacity:0 } 
+to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+from{ bottom:-400px; opacity:0 } 
+to{ bottom:0; opacity:1 }
+}
+
+/* preloader ends */
+
+/* Scroll Indicator*/ 
   
 .header {
     position: fixed;
     top: 0;
     z-index: 2000;
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: #203345;
   }
   
   .progress-container {
     width: 100%;
     height: 11px;
-    background: #ccc;
+    background: #203345;
   }
   
   .progress-bar {
     height: 8px;
-    background: #4caf50;
+    background: blue;
     width: 0%;
   }
   
 
+/* Scroll Indicator Ends*/ 
 
 
 body{
@@ -91,6 +97,9 @@ body{
     font-weight: bolder;
     overflow-x: hidden !important;
 }
+
+/* nav bar starts */
+
 .nav-header{
     background: #203345;
 }
@@ -103,6 +112,9 @@ body{
     margin-right: 2rem;
     margin-left: 1rem;
 }
+
+/* nav bar ends */
+
 main{
     display: flex;
     flex-direction: column;
@@ -317,6 +329,9 @@ section{
     box-shadow: 0 0.2rem 0.5rem 0.2rem rgb(163, 156, 156);
 }
 
+
+/* footer starts */
+
 footer{
     display: flex;
     background-color: #203345 !important;
@@ -375,6 +390,7 @@ footer{
     margin: auto;
 }
 
+/* footer ends */
 
 @media screen and (min-width:1595px){
     .bg-top-big-top{
