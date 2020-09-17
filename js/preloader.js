@@ -18,23 +18,23 @@ function showPage() {
 
 window.onscroll = function() {
     myFunction();
-    // scrollFunction();
+    scrollFunction();
 };
 
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
+  // console.log(scrolled)
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
 /*scroll to top */
 
 // When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     document.getElementById("myBtn").style.display = "block";
   } else {
     document.getElementById("myBtn").style.display = "none";
